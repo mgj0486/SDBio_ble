@@ -13,7 +13,6 @@ let uiTarget = Target.createWithoutResource(
     product: .framework,
     scripts: [],
     dependencies: [
-        .entitiesProject,
     ],
     settings: nil,
     coreDataModels: []
