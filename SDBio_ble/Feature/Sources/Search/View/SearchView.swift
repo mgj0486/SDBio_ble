@@ -1,6 +1,5 @@
 import SwiftUI
-import Usecase
-import Entities
+import Core
 import CoreBluetooth
 
 public extension SearchView {

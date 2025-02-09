@@ -9,7 +9,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let entitiesTarget = Target.createWithoutResource(
-    targetName: Module.entities.name,
+    targetName: Module.core.name,
     product: .framework,
     scripts: [],
     dependencies: [
@@ -19,7 +19,7 @@ let entitiesTarget = Target.createWithoutResource(
 )
 
 let project = Project.create(
-    name: Module.entities.name,
+    name: Module.core.name,
     packages: [
     ],
     targets: [
