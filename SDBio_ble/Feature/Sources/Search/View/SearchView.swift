@@ -39,6 +39,7 @@ public struct SearchView: View {
                     toolbar()
                 }
             }
+            .onAppear(perform: intent.startScan)
         }
     }
     

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreBluetooth
+import Core
 
 class SearchIntent: NSObject {
     private weak var model: SearchModelActionsProtocol?
@@ -44,7 +45,7 @@ extension SearchIntent: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String: Any], rssi RSSI: NSNumber) {
-        let item = BlueToothItem(rssi: RSSI.intValue, peripheral: peripheral)
+        let item = BlueToothItem(rssi: RSSI.toint(), peripheral: peripheral)
         model?.deviceFounded(item)
     }
 }

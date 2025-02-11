@@ -11,7 +11,6 @@ import SwiftUI
 import CoreBluetooth
 
 class SearchModel: NSObject, ObservableObject, SearchModelStateProtocol {
-    
     @Published var state: SearchState = .idle
     @Published var devices: [BlueToothItem] = []
     @Published var errorText: String = ""
